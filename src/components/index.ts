@@ -1,3 +1,3 @@
 import LandingPage from "./landing-page";
-
-export { LandingPage };
+import ElevateAppBar from "./nav/ElevatedAppBar";
+export { LandingPage, ElevateAppBar };

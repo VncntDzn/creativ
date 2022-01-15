@@ -1,16 +1,14 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import { Box, Typography } from "@mui/material";
 
-const LandingText = props => {
-    return (
-        <div>
-            text
-        </div>
-    )
-}
+const LandingText = () => {
+  return (
+    <Box style={{ border: "3px solid" }}>
+      <Typography variant="h3">
+        We provide creative solutions <br /> for your success
+      </Typography>
+      <Typography variant="h6">Your Idea. Our Technology.</Typography>
+    </Box>
+  );
+};
 
-LandingText.propTypes = {
-
-}
-
-export default LandingText
+export default LandingText;

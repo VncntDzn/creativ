@@ -1,12 +1,19 @@
 import React from "react";
 import PropTypes from "prop-types";
-
+import Lottie from "react-lottie";
+import Software from "lottie/software.json";
+const defaultOptions = {
+  loop: true,
+  autoplay: true,
+  animationData: Software,
+  rendererSettings: {
+    preserveAspectRatio: "xMidYMid slice",
+  },
+};
 const LandingPoster = () => {
   return (
-    <div>
-      <div  >
-        <h1 className="white">NEXT BEST TEXT</h1>
-      </div>
+    <div style={{border:'3px solid'}}>
+      <Lottie options={defaultOptions} height={'100%'} width={'100%'} />
     </div>
   );
 };

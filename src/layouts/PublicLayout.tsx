@@ -1,6 +1,7 @@
 import PropTypes from "prop-types";
 import { ChildrenProps } from "../types";
 import { Box } from "@mui/material";
+import { ElevateAppBar } from "components";
 
 const PublicLayout = ({ children }: ChildrenProps) => {
   return (
@@ -11,8 +12,11 @@ const PublicLayout = ({ children }: ChildrenProps) => {
       /*   backgroundImage: `radial-gradient(#c3c3c3 1px, transparent 0)`, */
         backgroundSize: `250px 1px`,
         backgroundPosition: `-19px -19px`,
+        marginX:"5rem",
+        border:"3px solid blue"
       }}
     >
+      <ElevateAppBar/>
       {children}
     </Box>
   );
