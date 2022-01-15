@@ -5,20 +5,12 @@ import { ElevateAppBar } from "components";
 
 const PublicLayout = ({ children }: ChildrenProps) => {
   return (
-    <Box
-      sx={{
-        height: "100vh",
-        background: `linear-gradient(90deg, #eee 1%, transparent 1%) 1px 0, #fff`, 
-      /*   backgroundImage: `radial-gradient(#c3c3c3 1px, transparent 0)`, */
-        backgroundSize: `250px 1px`,
-        backgroundPosition: `-19px -19px`,
-        marginX:"5rem",
-        border:"3px solid blue"
-      }}
-    >
-      <ElevateAppBar/>
-      {children}
-    </Box>
+    <>
+      <ElevateAppBar />
+      <Box display="flex" height="100vh" alignItems="center">
+        {children}
+      </Box>
+    </>
   );
 };
 /* background: `linear-gradient(90deg, #eee 1%, transparent 1%) 1px 0, #fff`, */

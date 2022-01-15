@@ -17,7 +17,6 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <meta name="viewport" content="initial-scale=1, width=device-width" />
           <link
             rel="stylesheet"
             href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -26,6 +25,12 @@ class MyDocument extends Document {
             rel="stylesheet"
             href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
           />
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap"
+            rel="stylesheet"
+          />
+          <meta name="viewport" content="initial-scale=1, width=device-width" />
         </Head>
         <body>
           <Main />
