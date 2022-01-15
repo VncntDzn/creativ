@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import { PublicLayout } from "layouts";
+import { LandingPage } from "components";
 const Home: NextPage = () => {
   return (
     <PublicLayout>
@@ -14,7 +15,7 @@ const Home: NextPage = () => {
       </Head>
 
       <main>
-        <h1>hi</h1>
+        <LandingPage />
       </main>
     </PublicLayout>
   );
