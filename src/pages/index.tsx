@@ -6,7 +6,7 @@ const Home: NextPage = () => {
   return (
     <PublicLayout>
       <Head>
-        <title>CSS</title>
+        <title>Creativ</title>
         <meta
           name="description"
           content="CreatiV Strategies & Solutions Website"

@@ -30,6 +30,10 @@ class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap"
             rel="stylesheet"
           />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+            rel="stylesheet"
+          />
           <meta name="viewport" content="initial-scale=1, width=device-width" />
         </Head>
         <body>

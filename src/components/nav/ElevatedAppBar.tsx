@@ -36,9 +36,15 @@ export default function ElevateAppBar(props: Props) {
   return (
     <>
       <ElevationScroll {...props}>
-        <AppBar>
+        <AppBar sx={{ backgroundColor: "white" }}>
           <Toolbar>
-            <Typography variant="h6" component="div">
+            <Typography
+             fontFamily="Merriweather, sans-serif"
+              variant="h5"
+              component="div"
+              color="black"
+              fontWeight={600}
+            >
               CreatiV
             </Typography>
           </Toolbar>

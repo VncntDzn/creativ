@@ -18,9 +18,9 @@ const LandingPage = () => {
       <Grid item md={6}>
         <LandingText />
       </Grid>
-      <Grid item md={6}>
+     {/*  <Grid item md={6}>
         <LandingPoster />
-      </Grid>
+      </Grid> */}
     </Grid>
   );
 };

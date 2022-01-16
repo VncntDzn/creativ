@@ -10,14 +10,6 @@ declare module "@mui/material/styles" {
   }
 }
 const theme: Theme = createTheme({
-  palette: {
-    primary: {
-      main: "#EF4444",
-    },
-    secondary: {
-      main: "#71717A",
-    },
-  },
   breakpoints: {
     values: {
       xs: 0,
