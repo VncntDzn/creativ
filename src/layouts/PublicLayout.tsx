@@ -7,7 +7,7 @@ const PublicLayout = ({ children }: ChildrenProps) => {
   return (
     <>
       <ElevateAppBar />
-      <Box display="flex" height="100vh" alignItems="center">
+      <Box display="flex" alignItems="center">
         {children}
       </Box>
     </>

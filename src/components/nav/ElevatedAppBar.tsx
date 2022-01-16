@@ -13,7 +13,7 @@ interface Props {
    * You won't need it on your project.
    */
   window?: () => Window;
-  children: React.ReactElement;
+  children?: React.ReactElement;
 }
 
 function ElevationScroll(props: Props) {
@@ -39,7 +39,7 @@ export default function ElevateAppBar(props: Props) {
         <AppBar sx={{ backgroundColor: "white" }}>
           <Toolbar>
             <Typography
-             fontFamily="Merriweather, sans-serif"
+              fontFamily="Merriweather, sans-serif"
               variant="h5"
               component="div"
               color="black"

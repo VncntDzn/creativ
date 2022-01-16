@@ -12,8 +12,8 @@ const defaultOptions = {
 };
 const LandingPoster = () => {
   return (
-    <div style={{border:'3px solid'}}>
-      <Lottie options={defaultOptions} height={'100%'} width={'100%'} />
+    <div>
+      <Lottie options={defaultOptions} height={"100%"} width={"100%"} />
     </div>
   );
 };

@@ -7,8 +7,9 @@ const LandingText = () => {
       flexDirection="column"
       justifyContent="center"
       alignItems="center"
-      width="100vw"
+     
       marginTop={5}
+      sx={{border:'3px solid blue'}}
     >
       <Typography
         fontFamily="Merriweather, sans-serif"

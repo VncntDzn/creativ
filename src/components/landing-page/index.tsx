@@ -15,12 +15,18 @@ const LandingPage = () => {
         backgroundPosition: `-19px -19px`,
       }}
     >
-      <Grid item md={6}>
+      <Grid
+        item
+        sm={12}
+        md={6}
+        lg={4}
+        sx={{ border: "3px solid red", width: "100vw" }}
+      >
         <LandingText />
       </Grid>
-     {/*  <Grid item md={6}>
+      <Grid item sm={12} md={6} lg={8} sx={{ border: "3px solid" }}>
         <LandingPoster />
-      </Grid> */}
+      </Grid>
     </Grid>
   );
 };
