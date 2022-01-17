@@ -7,7 +7,12 @@ const PublicLayout = ({ children }: ChildrenProps) => {
   return (
     <>
       <ElevateAppBar />
-      <Box display="flex" alignItems="center">
+      <Box
+        display="flex"
+        flexDirection="column"
+        height="100vh"
+        sx={{ border: "3px solid", marginX: { xs: 2, lg: 20 } }}
+      >
         {children}
       </Box>
     </>

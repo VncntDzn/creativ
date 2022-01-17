@@ -1,20 +1,21 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Lottie from "react-lottie";
-import Software from "lottie/software.json";
+import dev from "lottie/dev.json";
+import { Box } from "@mui/material";
 const defaultOptions = {
   loop: true,
   autoplay: true,
-  animationData: Software,
+  animationData: dev,
   rendererSettings: {
     preserveAspectRatio: "xMidYMid slice",
   },
 };
 const LandingPoster = () => {
   return (
-    <div>
-      <Lottie options={defaultOptions} height={"100%"} width={"100%"} />
-    </div>
+    <Box>
+      <Lottie options={defaultOptions} height="100%" width={"100%"} />
+    </Box>
   );
 };
 

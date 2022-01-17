@@ -6,25 +6,11 @@ import LandingPoster from "./LandingPoster";
 
 const LandingPage = () => {
   return (
-    <Grid
-      container
-      sx={{
-        height: "100vh",
-        background: `linear-gradient(90deg, #eee 1%, transparent 1%) 1px 0, #fff`,
-        backgroundSize: `250px 1px`,
-        backgroundPosition: `-19px -19px`,
-      }}
-    >
-      <Grid
-        item
-        sm={12}
-        md={6}
-        lg={4}
-        sx={{ border: "3px solid red", width: "100vw" }}
-      >
+    <Grid container>
+      <Grid item sm={6}  lg={5} sx={{ width: "100vw" }}>
         <LandingText />
       </Grid>
-      <Grid item sm={12} md={6} lg={8} sx={{ border: "3px solid" }}>
+      <Grid item sm={6}  lg={7}>
         <LandingPoster />
       </Grid>
     </Grid>

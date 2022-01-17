@@ -15,7 +15,7 @@ const Home: NextPage = () => {
       </Head>
 
       <main>
-        {/*  <LandingPage /> */}
+        <LandingPage />
         <Projects />
       </main>
     </PublicLayout>

@@ -1,13 +1,29 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 
-const SectionHeader = () => {
+interface SectionHeaderProps {
+  title: string;
+  subtitle: string | number;
+}
+const SectionHeader = ({ subtitle, title }: SectionHeaderProps) => {
   return (
-    <>
-      <Typography>Header Blue</Typography>
-      <Typography>Header Main</Typography>
-    </>
+    <Box>
+      <Typography
+        fontSize={25}
+        variant="h5"
+        fontFamily="Merriweather, sans-serif"
+      >
+        {title}
+      </Typography>
+      <Typography
+        fontSize={20}
+        variant="h5"
+        fontFamily="Merriweather, sans-serif"
+      >
+        {subtitle}
+      </Typography>
+    </Box>
   );
 };
 

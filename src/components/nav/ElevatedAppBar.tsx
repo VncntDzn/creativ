@@ -2,10 +2,7 @@ import * as React from "react";
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
-import CssBaseline from "@mui/material/CssBaseline";
 import useScrollTrigger from "@mui/material/useScrollTrigger";
-import Box from "@mui/material/Box";
-import Container from "@mui/material/Container";
 
 interface Props {
   /**
@@ -13,7 +10,7 @@ interface Props {
    * You won't need it on your project.
    */
   window?: () => Window;
-  children?: React.ReactElement;
+  children?: any;
 }
 
 function ElevationScroll(props: Props) {
@@ -37,7 +34,7 @@ export default function ElevateAppBar(props: Props) {
     <>
       <ElevationScroll {...props}>
         <AppBar sx={{ backgroundColor: "white" }}>
-          <Toolbar>
+          <Toolbar sx={{ border: "3px solid", marginX: { lg: 17 } }}>
             <Typography
               fontFamily="Merriweather, sans-serif"
               variant="h5"
