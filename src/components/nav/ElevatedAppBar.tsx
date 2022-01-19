@@ -34,7 +34,7 @@ export default function ElevateAppBar(props: Props) {
     <>
       <ElevationScroll {...props}>
         <AppBar sx={{ backgroundColor: "white" }}>
-          <Toolbar sx={{ border: "3px solid", marginX: { lg: 17 } }}>
+          <Toolbar sx={{ border: "3px solid", marginX: { lg: 14 } }}>
             <Typography
               fontFamily="Merriweather, sans-serif"
               variant="h5"
