@@ -16,9 +16,9 @@ const links: Readonly<LinkProps[]> = [
     name: "Projects",
     href: "/#project",
   },
-  {
+ /*  {
     name: "Contact Us",
     href: "/#contact-us",
-  },
+  }, */
 ];
 export default links;
