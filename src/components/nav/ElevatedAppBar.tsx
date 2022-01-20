@@ -3,6 +3,8 @@ import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import useScrollTrigger from "@mui/material/useScrollTrigger";
+import Navbar from "./Navbar";
+import { Grid } from "@mui/material";
 
 interface Props {
   /**
@@ -34,17 +36,24 @@ export default function ElevateAppBar(props: Props) {
     <>
       <ElevationScroll {...props}>
         <AppBar sx={{ backgroundColor: "white" }}>
-          <Toolbar sx={{ border: "3px solid", marginX: { md: 9, lg: 20 } }}>
-            <Typography
-              fontFamily="Merriweather, sans-serif"
-              variant="h5"
-              component="div"
-              color="black"
-              fontWeight={600}
-            >
-              CreatiV
-            </Typography>
-          </Toolbar>
+          <Grid container sx={{ paddingX: {xs:1, md: 9, lg: 20 } }}>
+            <Grid item xs={4} lg={6}>
+              <Toolbar>
+                <Typography
+                  fontFamily="Merriweather, sans-serif"
+                  variant="h5"
+                  component="div"
+                  color="black"
+                  fontWeight={600}
+                >
+                  CreatiV
+                </Typography>
+              </Toolbar>
+            </Grid>
+            <Grid item lg={6} xs={8}>
+              <Navbar />
+            </Grid>
+          </Grid>
         </AppBar>
       </ElevationScroll>
       <Toolbar />

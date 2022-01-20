@@ -12,11 +12,11 @@ const defaultOptions = {
 };
 const LandingPoster = () => {
   const theme = useTheme();
-  const matches = useMediaQuery(theme.breakpoints.up("sm"));
+  const matches = useMediaQuery(theme.breakpoints.up("md"));
   return (
     <Box sx={{ marginTop: { xs: -8, sm: -15 } }}>
       <Lottie
-        width={`${matches ? "45rem" : "100%"}`}
+        width={`${matches ? "50vw" : "100%"}`}
         options={defaultOptions}
       />
     </Box>

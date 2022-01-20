@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import { ChildrenProps } from "../types";
-import { Box } from "@mui/material";
-import { ElevateAppBar, Footer } from "components";
+import { Box, Grid } from "@mui/material";
+import { ElevateAppBar, Footer, Navbar } from "components";
 
 const PublicLayout = ({ children }: ChildrenProps) => {
   return (
@@ -15,7 +15,7 @@ const PublicLayout = ({ children }: ChildrenProps) => {
         <ElevateAppBar />
         {children}
       </Box>
-      <Footer />
+     {/*  <Footer /> */}
     </>
   );
 };

@@ -27,7 +27,7 @@ const LandingText = () => {
           fontWeight={600}
           sx={{
             fontSize: HEADER_FONT_STYLE,
-            backgroundColor: "#8be4f0",
+            backgroundColor: "#ce7831",
             textAlign: { xs: "center" },
           }}
         >
