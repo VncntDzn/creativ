@@ -10,7 +10,7 @@ import DesktopNavbar from "./components/DesktopNavbar";
 const Navbar = () => {
   const [toggle, handleToggle] = useToggle();
   const theme = useTheme();
-  const matches = useMediaQuery(theme.breakpoints.up("sm"));
+  const matches = useMediaQuery(theme.breakpoints.up("md"));
   return (
     <Box
       display="flex"
