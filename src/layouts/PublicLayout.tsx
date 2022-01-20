@@ -9,7 +9,7 @@ const PublicLayout = ({ children }: ChildrenProps) => {
       display="flex"
       flexDirection="column"
       height="100vh"
-      sx={{ marginX: { xs: 2, lg: 15, xl:20} }}
+      sx={{ marginX: { xs: 2, md: 10, lg: 15, xl: 20 } }}
     >
       <ElevateAppBar />
       {children}

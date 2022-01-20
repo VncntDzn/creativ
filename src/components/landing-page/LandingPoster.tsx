@@ -18,7 +18,7 @@ const LandingPoster = () => {
   return (
     <Box sx={{ marginTop: { xs: -8, sm: -15 } }}>
       <Lottie
-        width={`${matches ? "40rem" : "100%"}`}
+        width={`${matches ? "45rem" : "100%"}`}
         options={defaultOptions}
       />
     </Box>

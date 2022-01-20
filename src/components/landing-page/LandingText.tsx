@@ -8,7 +8,7 @@ const LandingText = () => {
         fontWeight={600}
         sx={{
           textAlign: { xs: "center" },
-          fontSize: { xs: 22, sm: 35, lg: 38 },
+          fontSize: { xs: 22, sm: 35, md: 30, lg: 32, xl: 40 },
         }}
       >
         We provide creative solutions <br />{" "}
@@ -17,7 +17,7 @@ const LandingText = () => {
           fontFamily="Merriweather, sans-serif"
           fontWeight={600}
           sx={{
-            fontSize: { xs: 22, sm: 35, lg: 38 },
+            fontSize: { xs: 22, sm: 35, md: 30, lg: 32 ,xl: 40},
             backgroundColor: "#8be4f0",
             textAlign: { xs: "center" },
           }}
@@ -30,7 +30,7 @@ const LandingText = () => {
         fontFamily="Merriweather, sans-serif"
         sx={{
           textAlign: { xs: "center" },
-          fontSize: { xs: 20, lg: 25 },
+          fontSize: { xs: 20  },
         }}
       >
         Your Idea. Our Technology.
