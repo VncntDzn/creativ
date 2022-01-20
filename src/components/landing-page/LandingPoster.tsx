@@ -1,5 +1,3 @@
-import React from "react";
-import PropTypes from "prop-types";
 import Lottie from "react-lottie";
 import team from "lottie/team.json";
 import { Box, useMediaQuery } from "@mui/material";
@@ -24,7 +22,5 @@ const LandingPoster = () => {
     </Box>
   );
 };
-
-LandingPoster.propTypes = {};
 
 export default LandingPoster;
