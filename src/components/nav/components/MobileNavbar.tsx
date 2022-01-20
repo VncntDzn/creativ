@@ -1,11 +1,23 @@
-import links from "../utils/links";
+import links, { LinkProps } from "../utils/links";
 import ActiveLink from "components/common/ActiveLink";
 import { Box } from "@mui/system";
 import { Divide as Hamburger } from "hamburger-react";
 import { useToggle } from "hooks";
+import { useEffect, useState } from "react";
 
+const contactUs = [
+  {
+    name: "Contact Us",
+    href: "/#contact-us",
+  },
+];
 const MobileNavbar = () => {
   const [toggle, handleToggle] = useToggle();
+  const [routes, setRoutes] = useState<LinkProps[]>([]);
+
+  useEffect(() => {
+    setRoutes(links.concat(contactUs));
+  }, []);
   return (
     <Box
       display="flex"
@@ -31,9 +43,9 @@ const MobileNavbar = () => {
           height="100vh"
           sx={{
             background: "white",
-           }}
+          }}
         >
-          {links.map(({ name, href }) => (
+          {routes.map(({ name, href }: LinkProps) => (
             <Box
               display="flex"
               flexDirection="column"

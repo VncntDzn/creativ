@@ -57,7 +57,13 @@ export default function ElevateAppBar(props: Props) {
             <Grid item lg={5} xs={8}>
               <Navbar />
             </Grid>
-            <Grid item lg={4} xs={8} container justifyContent="flex-end">
+            <Grid
+              item
+              lg={4}
+              container
+              justifyContent="flex-end"
+              sx={{ display: { xs: "none" } }}
+            >
               <Button>Contact Us</Button>
             </Grid>
           </Grid>
