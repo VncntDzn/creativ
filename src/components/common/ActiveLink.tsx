@@ -7,8 +7,13 @@ import { NextRouter, useRouter } from "next/router";
 import { Typography } from "@mui/material";
 import Link from "next/link";
 import PropTypes from "prop-types";
+import { ReactNode } from "react";
 
-const ActiveLink = ({ children, href = "/" }) => {
+interface ActiveLinkProps {
+  children?: ReactNode;
+  href: string | undefined;
+}
+const ActiveLink = ({ children, href = "/" }: ActiveLinkProps) => {
   const router: NextRouter = useRouter();
   const CONDITION = router.pathname === href;
   const ACTIVE_STYLE = { color: "black", borderTop: "5px solid #ce7831" };
@@ -30,7 +35,7 @@ const ActiveLink = ({ children, href = "/" }) => {
           {
             "&:hover": {
               background: "rgb(198, 116, 47, 0.7)",
-              color: 'white'
+              color: "white",
             },
           },
         ]}
