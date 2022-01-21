@@ -26,7 +26,7 @@ const LandingPage = () => {
         alignItems="center"
         sx={{
           marginTop: { xs: 25, md: 5, lg: 10 },
-          paddingX: { lg: 3 },
+          paddingX: { lg: 2 },
         }}
       >
         <Grid item md={8} lg={6}>
