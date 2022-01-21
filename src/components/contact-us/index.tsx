@@ -10,7 +10,7 @@ const HEADER_FONT_STYLE = {
 };
 const FONT_MERRIWEATHER = "Merriweather, sans-serif";
 
-const AboutUs = () => {
+const ContactUs = () => {
   return (
     <Box marginTop={5} sx={{ paddingX: { lg: 3 } }}>
       <Typography
@@ -21,7 +21,7 @@ const AboutUs = () => {
           fontSize: HEADER_FONT_STYLE,
         }}
       >
-        About Us
+        Contact Us
       </Typography>
       <Typography
         variant="h6"
@@ -45,4 +45,4 @@ const AboutUs = () => {
   );
 };
 
-export default AboutUs;
+export default ContactUs;

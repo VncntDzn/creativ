@@ -7,5 +7,15 @@ import Footer from "./nav/Footer";
 import Navbar from "./nav/Navbar";
 //about-us components
 import AboutUs from "./about-us";
+//contact-us components
+import ContactUs from "./contact-us";
 
-export { LandingPage, ElevateAppBar, AboutUs, Projects, Footer, Navbar };
+export {
+  ContactUs,
+  LandingPage,
+  ElevateAppBar,
+  AboutUs,
+  Projects,
+  Footer,
+  Navbar,
+};
