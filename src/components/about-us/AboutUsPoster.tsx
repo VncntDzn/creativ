@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const AboutUsPoster = (props) => {
-  return <div>jo</div>;
+  return <div>  </div>;
 };
 
 AboutUsPoster.propTypes = {};

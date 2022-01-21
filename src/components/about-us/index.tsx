@@ -1,22 +1,48 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { Grid } from "@mui/material";
+import { Grid, Box, Typography } from "@mui/material";
 import AboutUsPoster from "./AboutUsPoster";
 import AboutUsTexts from "./AboutUsTexts";
+const HEADER_FONT_STYLE = {
+  xs: 22,
+  sm: 35,
+  md: 30,
+  lg: 32,
+  xl: 40,
+};
+const FONT_MERRIWEATHER = "Merriweather, sans-serif";
 
 const AboutUs = () => {
   return (
-    <Grid container>
-      <Grid item>
-        <AboutUsPoster />
+    <Box sx={{ paddingX: { lg: 3 } }}>
+      <Typography
+        fontFamily={FONT_MERRIWEATHER}
+        fontWeight={600}
+        sx={{
+          textAlign: { xs: "center", lg: 'left' },
+          fontSize: HEADER_FONT_STYLE,
+        }}
+      >
+        About Us
+      </Typography>
+      <Typography
+        variant="h6"
+        fontFamily={FONT_MERRIWEATHER}
+        sx={{
+          textAlign: { xs: "center", lg: 'left' },
+          fontSize: { xs: 15 },
+        }}
+      >
+        We are more than a freelance team.
+      </Typography>
+      <Grid container marginTop={10}>
+        <Grid item lg={7}>
+          <AboutUsPoster />
+        </Grid>
+        <Grid item xs={12} lg={5}>
+          <AboutUsTexts />
+        </Grid>
       </Grid>
-      <Grid item>
-        <AboutUsTexts />
-      </Grid>
-    </Grid>
+    </Box>
   );
 };
-
-AboutUs.propTypes = {};
 
 export default AboutUs;

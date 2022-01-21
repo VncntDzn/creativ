@@ -39,7 +39,7 @@ const LandingText = () => {
         fontFamily={FONT_MERRIWEATHER}
         sx={{
           textAlign: { xs: "center" },
-          fontSize: { xs: 20 },
+          fontSize: { xs: 15, md: 18 },
         }}
       >
         Your Idea. Our Technology.
