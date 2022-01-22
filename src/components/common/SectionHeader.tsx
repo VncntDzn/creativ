@@ -6,20 +6,35 @@ interface SectionHeaderProps {
   title: string;
   subtitle: string | number;
 }
+const HEADER_FONT_STYLE = {
+  xs: 22,
+  sm: 35,
+  md: 30,
+  lg: 32,
+  xl: 40,
+};
+const FONT_MERRIWEATHER = "Merriweather, sans-serif";
+
 const SectionHeader = ({ subtitle, title }: SectionHeaderProps) => {
   return (
     <Box>
       <Typography
-        fontSize={25}
-        variant="h5"
-        fontFamily="Merriweather, sans-serif"
+        fontFamily={FONT_MERRIWEATHER}
+        fontWeight={600}
+        sx={{
+          textAlign: { xs: "center", lg: "left" },
+          fontSize: HEADER_FONT_STYLE,
+        }}
       >
         {title}
       </Typography>
       <Typography
-        fontSize={20}
-        variant="h5"
-        fontFamily="Merriweather, sans-serif"
+        variant="h6"
+        fontFamily={FONT_MERRIWEATHER}
+        sx={{
+          textAlign: { xs: "center", lg: "left" },
+          fontSize: { xs: 15 },
+        }}
       >
         {subtitle}
       </Typography>
