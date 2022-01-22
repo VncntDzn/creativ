@@ -1,8 +1,5 @@
-import React from "react";
-import PropTypes from "prop-types";
 import { Box, Divider, Grid, IconButton, Typography } from "@mui/material";
-import DesktopNavbar from "./components/DesktopNavbar";
-import socialMedia from "./utils/socialMedia";
+import socialMedia, { SocMedProps } from "./utils/socialMedia";
 import { NextRouter, useRouter } from "next/router";
 import links, { LinkProps } from "./utils/links";
 
@@ -45,7 +42,7 @@ const Footer = () => {
         </Grid>
         <Grid
           item
-          sm={4} 
+          sm={4}
           md={4}
           container
           justifyContent="space-around"
@@ -64,8 +61,8 @@ const Footer = () => {
             </Typography>
           ))}
         </Grid>
-        <Grid item sm={4}  md={4} container justifyContent="center">
-          {socialMedia.map(({ text, icon, href }, i) => (
+        <Grid item sm={4} md={4} container justifyContent="center">
+          {socialMedia.map(({ icon, href }: SocMedProps, i) => (
             <IconButton
               sx={{
                 color: "white",
