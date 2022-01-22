@@ -16,7 +16,7 @@ interface ActiveLinkProps {
 const ActiveLink = ({ children, href = "/" }: ActiveLinkProps) => {
   const router: NextRouter = useRouter();
   const CONDITION = router.pathname === href;
-  const ACTIVE_STYLE = { color: "black", borderTop: "5px solid #ce7831" };
+  const ACTIVE_STYLE = { color: "#ce7831", borderTop: "3px solid #ce7831" };
   const INACTIVE_STYLE = {
     color: "black",
     cursor: "pointer",
@@ -34,7 +34,7 @@ const ActiveLink = ({ children, href = "/" }: ActiveLinkProps) => {
           CONDITION ? ACTIVE_STYLE : INACTIVE_STYLE,
           {
             "&:hover": {
-              background: "rgb(198, 116, 47, 0.7)",
+              background: "rgb(198, 116, 47, 0.6)",
               color: "white",
             },
           },

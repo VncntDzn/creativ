@@ -19,10 +19,6 @@ class MyDocument extends Document {
         <Head>
           <link
             rel="stylesheet"
-            href="https://fonts.googleapis.com/icon?family=Material+Icons"
-          />
-          <link
-            rel="stylesheet"
             href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
           />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -33,6 +29,10 @@ class MyDocument extends Document {
           <link
             href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
             rel="stylesheet"
+          />
+          <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
           />
         </Head>
         <body>

@@ -6,16 +6,15 @@ import { ElevateAppBar, Footer, Navbar } from "components";
 const PublicLayout = ({ children }: ChildrenProps) => {
   return (
     <>
+      <ElevateAppBar />
       <Box
         display="flex"
         flexDirection="column"
-        height="100vh"
         sx={{ marginX: { xs: 2, md: 10, lg: 15, xl: 20 } }}
       >
-        <ElevateAppBar />
         {children}
       </Box>
-     {/*  <Footer /> */}
+      <Footer />
     </>
   );
 };
