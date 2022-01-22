@@ -6,7 +6,7 @@ const Faqs = () => {
   return (
     <Box marginTop={5} sx={{ paddingX: { lg: 3 } }}>
       <SectionHeader
-        title="Faqs"
+        title="Frequently Asked Questions"
         subtitle="Let us answer your possible questions."
       />
       <CustomAccordion />
