@@ -1,18 +1,23 @@
-import React from "react";
-import PropTypes from "prop-types";
+import { Grid, Box, Typography } from "@mui/material";
 import SectionHeader from "components/common/SectionHeader";
-import { Box } from "@mui/material";
-import CaseStudies from "./CaseStudies";
+import AboutUsPoster from "./AboutUsPoster";
+import AboutUsTexts from "./AboutUsTexts";
 
 const Projects = () => {
   return (
-    <Box width="100%">
-      <SectionHeader subtitle="Cases" title="Our Projects" />
-      <CaseStudies />
+    <Box marginTop={5} sx={{ paddingX: { lg: 3 } }}>
+      <SectionHeader title="Projects" subtitle="Take a look on our projects." />
+
+      <Grid container marginTop={10}>
+        <Grid item lg={6} container justifyContent="center">
+          <AboutUsPoster />
+        </Grid>
+        <Grid item xs={12} lg={6}>
+          <AboutUsTexts />
+        </Grid>
+      </Grid>
     </Box>
   );
 };
-
-Projects.propTypes = {};
 
 export default Projects;

@@ -9,8 +9,10 @@ import Navbar from "./nav/Navbar";
 import AboutUs from "./about-us";
 //contact-us components
 import ContactUs from "./contact-us";
-
+//faqs components
+import Faqs from "./faqs";
 export {
+  Faqs,
   ContactUs,
   LandingPage,
   ElevateAppBar,
