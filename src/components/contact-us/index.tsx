@@ -1,15 +1,7 @@
 import { Grid, Box, Typography } from "@mui/material";
 import SectionHeader from "components/common/SectionHeader";
 import AboutUsPoster from "./AboutUsPoster";
-import AboutUsTexts from "./AboutUsTexts";
-const HEADER_FONT_STYLE = {
-  xs: 22,
-  sm: 35,
-  md: 30,
-  lg: 32,
-  xl: 40,
-};
-const FONT_MERRIWEATHER = "Merriweather, sans-serif";
+import ContactUsForm from "./ContactUsForm";
 
 const ContactUs = () => {
   return (
@@ -21,7 +13,7 @@ const ContactUs = () => {
           <AboutUsPoster />
         </Grid>
         <Grid item xs={12} lg={6}>
-          <AboutUsTexts />
+          <ContactUsForm />
         </Grid>
       </Grid>
     </Box>

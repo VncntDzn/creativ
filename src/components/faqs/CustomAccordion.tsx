@@ -15,7 +15,7 @@ export default function CustomAccordion() {
     };
 
   return (
-    <Box marginY={5} sx={{ marginX: { lg: "18rem" } }}>
+    <Box marginY={5} sx={{ marginX: {sm:'8rem', lg: "15rem" } }}>
       <Accordion>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
