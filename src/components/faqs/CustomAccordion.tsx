@@ -4,8 +4,10 @@ import AccordionDetails from "@mui/material/AccordionDetails";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import { Box } from "@mui/material";
+import { Box, Card } from "@mui/material";
 
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from "react-responsive-carousel";
 export default function CustomAccordion() {
   const [expanded, setExpanded] = React.useState<string | false>(false);
 
@@ -15,8 +17,50 @@ export default function CustomAccordion() {
     };
 
   return (
-    <Box marginY={5} sx={{ marginX: {sm:'8rem', lg: "15rem" } }}>
-      <Accordion>
+    <Box marginY={5} padding={5} sx={{ marginX: { lg: "8rem" } }}>
+      <Carousel showArrows={false}>
+        <Box
+          display="flex"
+          flexDirection="column"
+          justifyContent="space-between"
+          padding={2}
+        >
+          <Card
+            raised
+            sx={{
+              width: "fit-content",
+              alignSelf: "flex-start",
+              padding: 3,
+              borderRadius: "10px 0",
+            }}
+          >
+            <Typography textAlign="left">What can you offer to me?</Typography>
+          </Card>
+          <Card
+            raised
+            sx={{
+              backgroundColor: "#ce7831",
+              color: "white",
+              width: { lg: "30vw" },
+              alignSelf: "flex-end",
+              padding: 3,
+              borderRadius: "10px 0",
+              marginY: 5,
+            }}
+          >
+            <Typography textAlign="left">
+              We can offer you free consultation and free development
+            </Typography>
+          </Card>
+        </Box>
+        <div>
+          <p className="ss">ss 2</p>
+        </div>
+        <div>
+          <p className="ss">Legend 3</p>
+        </div>
+      </Carousel>
+      {/* <Accordion>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel1a-content"
@@ -75,7 +119,7 @@ export default function CustomAccordion() {
             malesuada lacus ex, sit amet blandit leo lobortis eget.
           </Typography>
         </AccordionDetails>
-      </Accordion>
+      </Accordion> */}
     </Box>
   );
 }

@@ -14,7 +14,7 @@ const ContactUsPoster = () => {
   const theme = useTheme();
   const matches = useMediaQuery(theme.breakpoints.up("md"));
   return (
-    <Box sx={{ marginTop: { xs: -8, sm: -15, md: -5 } }}>
+    <Box sx={{ marginTop: { xs: -8, sm: -10, md: -5 } }}>
       <Lottie width={`${matches ? "25vw" : "100%"}`} options={defaultOptions} />
     </Box>
   );
