@@ -1,6 +1,6 @@
 import { Grid, Box, Typography } from "@mui/material";
 import SectionHeader from "components/common/SectionHeader";
-import AboutUsPoster from "./AboutUsPoster";
+import ContactUsPoster from "./ContactUsPoster";
 import ContactUsForm from "./ContactUsForm";
 
 const ContactUs = () => {
@@ -10,7 +10,7 @@ const ContactUs = () => {
 
       <Grid container marginTop={10}>
         <Grid item lg={6} container justifyContent="center">
-          <AboutUsPoster />
+          <ContactUsPoster />
         </Grid>
         <Grid item xs={12} lg={6}>
           <ContactUsForm />
