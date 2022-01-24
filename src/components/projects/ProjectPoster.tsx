@@ -10,7 +10,7 @@ const defaultOptions = {
     preserveAspectRatio: "xMidYMid slice",
   },
 };
-const AboutUsPoster = () => {
+const ProjectPoster = () => {
   const theme = useTheme();
   const matches = useMediaQuery(theme.breakpoints.up("md"));
   return (
@@ -20,4 +20,4 @@ const AboutUsPoster = () => {
   );
 };
 
-export default AboutUsPoster;
+export default ProjectPoster;

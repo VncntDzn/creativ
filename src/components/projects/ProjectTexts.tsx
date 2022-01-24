@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { Box, Divider, Typography } from "@mui/material";
 import texts from "./utils/texts";
 
-const AboutUsTexts = () => {
+const ProjectTexts = () => {
   return (
     <Box>
       {texts.map(({ title, paragraph }) => (
@@ -19,6 +19,6 @@ const AboutUsTexts = () => {
   );
 };
 
-AboutUsTexts.propTypes = {};
+ProjectTexts.propTypes = {};
 
-export default AboutUsTexts;
+export default ProjectTexts;

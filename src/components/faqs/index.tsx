@@ -1,6 +1,6 @@
 import { Grid, Box, Typography } from "@mui/material";
 import SectionHeader from "../common/SectionHeader";
-import CustomAccordion from "./CustomAccordion";
+import FaqsCarousel from "./FaqsCarousel";
 
 const Faqs = () => {
   return (
@@ -9,7 +9,7 @@ const Faqs = () => {
         title="Frequently Asked Questions"
         subtitle="Let us answer your possible questions."
       />
-      <CustomAccordion />
+      <FaqsCarousel />
     </Box>
   );
 };

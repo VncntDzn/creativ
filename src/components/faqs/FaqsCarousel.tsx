@@ -3,10 +3,10 @@ import { Box, Card } from "@mui/material";
 
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
-export default function CustomAccordion() {
+const FaqsCarousel = () => {
   return (
     <Box marginY={5} padding={5} sx={{ marginX: { lg: "10rem" } }}>
-      <Carousel showArrows={false}>
+      <Carousel showIndicators={false} showThumbs={false} showArrows={false}>
         <Box
           display="flex"
           flexDirection="column"
@@ -50,4 +50,6 @@ export default function CustomAccordion() {
       </Carousel>
     </Box>
   );
-}
+};
+
+export default FaqsCarousel;
