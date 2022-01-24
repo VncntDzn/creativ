@@ -13,6 +13,14 @@ import "pure-react-carousel/dist/react-carousel.es.css";
 import texts from "./utils/texts";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
+const HEADER_FONT_STYLE = {
+  xs: 22,
+  sm: 35,
+  md: 30,
+  lg: 32,
+};
+const FONT_MERRIWEATHER = "Merriweather, sans-serif";
+
 const Projects = () => {
   return (
     <Box marginTop={5} sx={{ paddingX: { lg: 3 } }}>
@@ -34,7 +42,13 @@ const Projects = () => {
             {texts.map(({ title, id }) => (
               <Slide index={0} key={title}>
                 <Box display="flex" justifyContent="space-between">
-                  <Typography alignSelf="center">{title}</Typography>
+                  <Typography
+                    alignSelf="center"
+                    fontFamily={FONT_MERRIWEATHER}
+                    fontSize={HEADER_FONT_STYLE}
+                  >
+                    {title}
+                  </Typography>
                   <Box
                     marginTop={2}
                     display="flex"

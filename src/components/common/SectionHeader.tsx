@@ -34,8 +34,8 @@ const SectionHeader = ({ subtitle, title }: SectionHeaderProps) => {
         sx={{
           textAlign: { xs: "center", lg: "left" },
           fontSize: { xs: 15 },
-          borderBottom: 'thick solid #ce7831',
-          width: {md:'fit-content'}
+          borderBottom: "thick solid #ce7831",
+          width: { lg: "fit-content" },
         }}
       >
         {subtitle}

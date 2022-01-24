@@ -41,7 +41,7 @@ export default function ElevateAppBar(props: Props) {
             alignItems="center"
             sx={{ paddingX: { xs: 1, md: 9, xl: 20 } }}
           >
-            <Grid item xs={4} lg={4}>
+            <Grid item xs={4} lg={4} md={2}>
               <Toolbar>
                 <Typography
                   fontFamily="Merriweather, sans-serif"
@@ -56,21 +56,25 @@ export default function ElevateAppBar(props: Props) {
             </Grid>
             <Grid
               item
+              md={8}
               lg={4}
               xs={8}
               container
               sx={{
-                justifyContent: { xs: "flex-end", lg: "center" },
+                justifyContent: { xs: "flex-end", md: "center" },
               }}
             >
               <Navbar />
             </Grid>
             <Grid
               item
+              md={2}
               lg={4}
               container
               justifyContent="flex-end"
-              sx={{ display: { xs: "none", md: "flex" } }}
+              sx={{
+                display: { xs: "none", md: "flex" },
+              }}
             >
               <Button>Contact Us</Button>
             </Grid>

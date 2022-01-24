@@ -32,7 +32,7 @@ const LandingPage = () => {
           <LandingText />
         </Grid>
 
-        <Grid item md={4} lg={6}>
+        <Grid item md={4} lg={6} sx={{ marginTop: { md: 10 } }}>
           <LandingPoster />
         </Grid>
       </Grid>
