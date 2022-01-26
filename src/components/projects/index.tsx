@@ -33,7 +33,7 @@ interface ProjectsProps {
 }
 const Projects = ({ projects }: ProjectsProps) => {
   return (
-    <Box marginTop={5} sx={{ paddingX: { lg: 3 } }}>
+    <Box id="projects" marginTop={5} sx={{ paddingX: { lg: 3 } }}>
       <SectionHeader title="Projects" subtitle="Take a look on our projects." />
       <CarouselProvider
         totalSlides={projects?.length}

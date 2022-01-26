@@ -5,7 +5,7 @@ import ContactUsForm from "./ContactUsForm";
 
 const ContactUs = () => {
   return (
-    <Box marginTop={5} sx={{ paddingX: { lg: 3 } }}>
+    <Box id="contact-us" marginTop={5} sx={{ paddingX: { lg: 3 } }}>
       <SectionHeader title="Contact Us" subtitle="Let us connect with you." />
 
       <Grid container marginTop={10}>

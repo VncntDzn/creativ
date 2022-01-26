@@ -5,7 +5,7 @@ import AboutUsTexts from "./AboutUsTexts";
 
 const AboutUs = () => {
   return (
-    <Box marginTop={5}>
+    <Box id="about-us" marginTop={5}>
       <SectionHeader
         title="About Us"
         subtitle="We are more than a freelance team."

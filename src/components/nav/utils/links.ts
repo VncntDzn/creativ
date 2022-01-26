@@ -10,11 +10,11 @@ const links: Readonly<LinkProps[]> = [
   },
   {
     name: "About Us",
-    href: "/#about-us",
+    href: "#about-us",
   },
   {
     name: "Projects",
-    href: "/#project",
+    href: "#projects",
   },
 ];
 export default links;
