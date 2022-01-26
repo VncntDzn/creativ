@@ -5,6 +5,7 @@ import Typography from "@mui/material/Typography";
 import useScrollTrigger from "@mui/material/useScrollTrigger";
 import Navbar from "./Navbar";
 import { Button, Grid } from "@mui/material";
+import Link from "next/link";
 
 interface Props {
   /**
@@ -76,7 +77,9 @@ export default function ElevateAppBar(props: Props) {
                 display: { xs: "none", md: "flex" },
               }}
             >
-              <Button>Contact Us</Button>
+              <Link passHref href="#contact-us">
+                <Button>Contact Us</Button>
+              </Link>
             </Grid>
           </Grid>
         </AppBar>

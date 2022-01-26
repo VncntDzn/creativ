@@ -8,7 +8,9 @@ const AboutUsTexts = () => {
     <Box>
       {texts.map(({ title, paragraph }) => (
         <Box key={title}>
-          <Typography fontWeight={600}>{title}</Typography>
+          <Typography fontSize={20} fontWeight={600}>
+            {title}
+          </Typography>
           <Typography>{paragraph}</Typography>
           <Divider flexItem />
         </Box>
