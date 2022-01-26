@@ -9,9 +9,7 @@ const AboutUsTexts = () => {
       {texts.map(({ title, paragraph }) => (
         <Box key={title}>
           <Typography fontWeight={600}>{title}</Typography>
-          <Typography sx={{ textAlign: "justify", textJustify: "inter-word" }}>
-            {paragraph}
-          </Typography>
+          <Typography>{paragraph}</Typography>
           <Divider flexItem />
         </Box>
       ))}

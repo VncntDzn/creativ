@@ -21,6 +21,13 @@ const HEADER_FONT_STYLE = {
 };
 const FONT_MERRIWEATHER = "Merriweather, sans-serif";
 
+const BUTTON_STYLE = {
+  background: "none",
+  border: "1px solid",
+  borderRadius: "50%",
+  height: "3rem",
+  width: "3rem",
+};
 const Projects = ({ projects }) => {
   return (
     <Box marginTop={5} sx={{ paddingX: { lg: 3 } }}>
@@ -39,7 +46,7 @@ const Projects = ({ projects }) => {
           }}
         >
           <Slider style={{ height: "100%" }}>
-            {projects.map(({ title , image}) => (
+            {projects.map(({ title, image }) => (
               <Slide index={0} key={title}>
                 <Box display="flex" justifyContent="space-between">
                   <Typography
@@ -59,29 +66,12 @@ const Projects = ({ projects }) => {
                       width: { xs: "35%", sm: "15%", lg: "13%", xl: "8%" },
                     }}
                   >
-                    <ButtonBack
-                      style={{
-                        background: "none",
-                        border: "1px solid",
-                        borderRadius: "50%",
-                        height: "3rem",
-                        width: "3rem",
-                      }}
-                    >
+                    <ButtonBack style={BUTTON_STYLE}>
                       <Icon>
                         <ArrowBackIosNewIcon />
                       </Icon>
                     </ButtonBack>
-                    <ButtonNext
-                      style={{
-                        background: "none",
-                        border: "1px solid",
-                        borderRadius: "50%",
-                        height: "3rem",
-                        width: "3rem",
-                        zIndex: 1,
-                      }}
-                    >
+                    <ButtonNext style={BUTTON_STYLE}>
                       <Icon>
                         <ArrowForwardIosIcon />
                       </Icon>

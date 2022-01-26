@@ -10,7 +10,7 @@ const PublicLayout = ({ children }: ChildrenProps) => {
       <Box
         display="flex"
         flexDirection="column"
-        sx={{ marginX: { xs: 2, md: 10, lg: 15, xl: 20 } }}
+        sx={{ marginX: { xs: 2, sm: 4, md: 10, lg: 15, xl: 20 } }}
       >
         {children}
       </Box>
