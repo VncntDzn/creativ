@@ -17,7 +17,7 @@ const FONT_MERRIWEATHER = "Merriweather, sans-serif";
 
 const SectionHeader = ({ subtitle, title }: SectionHeaderProps) => {
   return (
-    <Box>
+    <Box display="flex" justifyContent="center" flexDirection="column">
       <Typography
         fontFamily={FONT_MERRIWEATHER}
         fontWeight={600}
@@ -35,7 +35,8 @@ const SectionHeader = ({ subtitle, title }: SectionHeaderProps) => {
           textAlign: { xs: "center", lg: "left" },
           fontSize: { xs: 15 },
           borderBottom: "thick solid #ce7831",
-          width: { lg: "fit-content" },
+          width: { xs: "fit-content" },
+          alignSelf: { xs: "center", lg: "flex-start" },
         }}
       >
         {subtitle}

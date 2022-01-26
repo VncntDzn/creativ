@@ -21,13 +21,13 @@ const HEADER_FONT_STYLE = {
 };
 const FONT_MERRIWEATHER = "Merriweather, sans-serif";
 
-const Projects = () => {
+const Projects = ({ projects }) => {
   return (
     <Box marginTop={5} sx={{ paddingX: { lg: 3 } }}>
       <SectionHeader title="Projects" subtitle="Take a look on our projects." />
 
       <CarouselProvider
-        totalSlides={texts.length}
+        totalSlides={projects?.length}
         naturalSlideWidth={100}
         naturalSlideHeight={125}
         infinite={true}
@@ -39,13 +39,14 @@ const Projects = () => {
           }}
         >
           <Slider style={{ height: "100%" }}>
-            {texts.map(({ title, id }) => (
+            {projects.map(({ title , image}) => (
               <Slide index={0} key={title}>
                 <Box display="flex" justifyContent="space-between">
                   <Typography
                     alignSelf="center"
                     fontFamily={FONT_MERRIWEATHER}
                     fontSize={HEADER_FONT_STYLE}
+                    onClick={() => console.log(image)}
                   >
                     {title}
                   </Typography>
@@ -90,7 +91,7 @@ const Projects = () => {
                 <Divider sx={{ paddingBottom: 1 }} />
                 <Grid container marginTop={10}>
                   <Grid item sm={6} lg={6} container justifyContent="center">
-                    <ProjectPoster />
+                    <ProjectPoster title={title} image={image} />
                   </Grid>
                   <Grid item sm={6} lg={6} sx={{ paddingRight: { sm: 1 } }}>
                     <ProjectTexts />

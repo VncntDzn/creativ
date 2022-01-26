@@ -1,21 +1,21 @@
-import Lottie from "react-lottie";
-import two_people from "lottie/two_people.json";
-import { Box, useMediaQuery } from "@mui/material";
-import { useTheme } from "@mui/material/styles";
-const defaultOptions = {
-  loop: true,
-  autoplay: true,
-  animationData: two_people,
-  rendererSettings: {
-    preserveAspectRatio: "xMidYMid slice",
-  },
-};
-const ProjectPoster = () => {
-  const theme = useTheme();
-  const matches = useMediaQuery(theme.breakpoints.up("md"));
+import { Box } from "@mui/material";
+import Image from "next/image";
+
+interface ProjectPosterProps {
+  image: string;
+  title: string | undefined;
+}
+const ProjectPoster = ({ image, title }: ProjectPosterProps) => {
   return (
-    <Box sx={{ marginTop: { xs: -8, sm: -15 } }}>
-      <Lottie width={`${matches ? "48vw" : "100%"}`} options={defaultOptions} />
+    <Box
+      position="relative"
+      sx={{
+        marginTop: { xs: -8, sm: 0 },
+        height: { xs: "40vh", sm: "100%", lg: "45vh" },
+        width: { xs: "100%", sm: "95%" },
+      }}
+    >
+      <Image src={image} quality={100} layout="fill" alt={title} />
     </Box>
   );
 };

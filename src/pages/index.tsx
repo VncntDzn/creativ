@@ -1,8 +1,23 @@
-import type { NextPage } from "next";
-import Head from "next/head";
+import type { GetStaticProps, NextPage } from "next";
 import { PublicLayout } from "layouts";
 import { AboutUs, ContactUs, Faqs, LandingPage, Projects } from "components";
-const Home: NextPage = () => {
+import { projects } from "queries";
+import { ChildrenProps } from "types";
+import Head from "next/head";
+import client from "config";
+
+interface HomeProps {
+  children: ChildrenProps;
+  projects: any;
+}
+export const getStaticProps: GetStaticProps = async (context) => {
+  return {
+    props: {
+      projects: await client.fetch(projects),
+    },
+  };
+};
+const Home = ({ projects }: HomeProps) => {
   return (
     <PublicLayout>
       <Head>
@@ -17,7 +32,7 @@ const Home: NextPage = () => {
       <main>
         <LandingPage />
         <AboutUs />
-        <Projects />
+        <Projects projects={projects} />
         <Faqs />
         <ContactUs />
       </main>
