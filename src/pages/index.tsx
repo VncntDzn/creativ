@@ -1,4 +1,4 @@
-import type { GetStaticProps, NextPage } from "next";
+import type { GetServerSideProps, GetStaticProps, NextPage } from "next";
 import { PublicLayout } from "layouts";
 import { AboutUs, ContactUs, Faqs, LandingPage, Projects } from "components";
 import { projects } from "queries";
@@ -10,7 +10,7 @@ interface HomeProps {
   children: ChildrenProps;
   projects: any;
 }
-export const getStaticProps: GetStaticProps = async (context) => {
+export const getServerSideProps: GetServerSideProps = async (context) => {
   return {
     props: {
       projects: await client.fetch(projects),

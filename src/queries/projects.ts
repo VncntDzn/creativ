@@ -3,6 +3,7 @@ const projects = `*[_type == 'projects']{
     title,
     url,
     tech_stack,
+    answers,
     "image": image.asset->url
   }`;
 

@@ -1,24 +1,48 @@
-import React from "react";
-import PropTypes from "prop-types";
 import { Box, Divider, Typography } from "@mui/material";
-import texts from "./utils/texts";
+import { NextRouter, useRouter } from "next/router";
 
-const ProjectTexts = () => {
+const FONT_MERRIWEATHER = "Merriweather, sans-serif";
+
+const questions: string[] = ["Who is the client?", "Task", "Solution"];
+const ProjectTexts = ({ answers, url }: { answers: any; url?: any }) => {
+  const router: NextRouter = useRouter();
+
+  const handleRoute = () => {
+    router.push(url);
+  };
   return (
-    <Box>
-      {texts.map(({ title, paragraph }) => (
-        <Box key={title}>
-          <Typography fontWeight={600}>{title}</Typography>
-          <Typography sx={{ textAlign: "justify", textJustify: "inter-word" }}>
-            {paragraph}
+    <>
+      {answers.map((data: string, i: number) => (
+        <Box key={i}>
+          <Typography
+            fontFamily={FONT_MERRIWEATHER}
+            fontSize={20}
+            fontWeight={600}
+          >
+            {questions[i]}
           </Typography>
-          <Divider flexItem />
+          <Typography
+            fontFamily={FONT_MERRIWEATHER}
+            sx={{ textAlign: "justify", textJustify: "inter-word" }}
+          >
+            {data}
+          </Typography>
+          <Divider flexItem sx={{ marginY: 2 }} />
         </Box>
       ))}
-    </Box>
+      <Typography
+        onClick={handleRoute}
+        fontFamily={FONT_MERRIWEATHER}
+        fontWeight={600}
+        sx={{
+          cursor: "pointer",
+          color: "#ce7831",
+        }}
+      >
+        Visit Website
+      </Typography>
+    </>
   );
 };
-
-ProjectTexts.propTypes = {};
 
 export default ProjectTexts;

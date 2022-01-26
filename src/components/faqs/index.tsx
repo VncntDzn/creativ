@@ -4,7 +4,7 @@ import FaqsCarousel from "./FaqsCarousel";
 
 const Faqs = () => {
   return (
-    <Box marginTop={5} sx={{ paddingX: { lg: 3 } }}>
+    <Box sx={{ paddingX: { lg: 3 } }}>
       <SectionHeader
         title="Frequently Asked Questions"
         subtitle="Let us answer your possible questions."
