@@ -2,7 +2,11 @@ import Lottie from "react-lottie";
 import { Box, useMediaQuery } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 
-const LottiePoster = ({ file, width }) => {
+interface LottiePosterProps {
+  file: any;
+  width: string | number;
+}
+const LottiePoster = ({ file, width }: LottiePosterProps) => {
   const theme = useTheme();
   const matches = useMediaQuery(theme.breakpoints.up("md"));
 
@@ -16,10 +20,7 @@ const LottiePoster = ({ file, width }) => {
   };
   return (
     <Box sx={{ marginTop: { xs: -8, sm: -15 } }}>
-      <Lottie
-        width={`${matches ? width : "100%"}`}
-        options={DEFAULT_OPTIONS}
-      />
+      <Lottie width={`${matches ? width : "100%"}`} options={DEFAULT_OPTIONS} />
     </Box>
   );
 };
