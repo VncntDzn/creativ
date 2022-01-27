@@ -1,7 +1,7 @@
 const texts = [
   {
     id: 1,
-    title: "Who is CreatiV?",
+    title: "Brief background of CreatiV",
     paragraph: [
       `CreatiV is a team of freelancers that aims to provide fast websites and applications by using modern technologies to its partners at little to no cost.`,
     ],
@@ -12,7 +12,7 @@ const texts = [
     paragraph: [
       `1. We make a thorough assessment about the needs of our partner.`,
       `2. We implement the features that the website needs.`,
-      `3. Open communication with the team and our partner.`,
+      `3. Open communication with the team and our partner and many more.`,
     ],
   },
   {

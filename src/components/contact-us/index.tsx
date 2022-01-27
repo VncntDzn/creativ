@@ -11,7 +11,7 @@ const ContactUs = () => {
 
       <Grid container marginTop={10}>
         <Grid item lg={6} container justifyContent="center">
-          <LottiePoster width={"25vw"} file={writing} />
+          <LottiePoster width={"30vw"} file={writing} />
         </Grid>
         <Grid item xs={12} lg={6}>
           <ContactUsForm />
