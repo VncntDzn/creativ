@@ -1,8 +1,8 @@
 const faqs = [
   {
     id: 1,
-    question: "What can you offer to me?",
-    answer: "We can offer you free consultation and free development",
+    question: "Do you offer free website development?",
+    answer: "Yes, we do!  We have templates that you can choose.",
   },
   {
     id: 2,
@@ -11,8 +11,20 @@ const faqs = [
   },
   {
     id: 3,
-    question: "Does your free website development expire?",
-    answer: "No. It is free forever.",
+    question: "Do you create websites from scratch?",
+    answer:
+      "Yes, we are building the websites from ground up and make sure that we meet your expectations.",
+  },
+  {
+    id: 4,
+    question: "How long does it take for you to build my website?",
+    answer:
+      "It really depends on the website you want us to create but mostly it will only 1-2 months of development for us to build it for you.",
+  },
+  {
+    id: 5,
+    question: "Great, I am interested! How can I contact you?",
+    answer: "Just send as an email: creativsolstrat@gmail.com",
   },
 ];
 
