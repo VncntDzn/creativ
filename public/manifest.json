@@ -1,0 +1,27 @@
+{
+  "name": "CreatiV App",
+  "short_name": "CreatiV",
+  "icons": [
+    {
+      "src": "./faveicon.ico",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./faveicon.ico",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "./faveicon.ico",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#FFFFFF",
+  "background_color": "#FFFFFF",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait"
+}
