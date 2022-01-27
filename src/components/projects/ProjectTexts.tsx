@@ -22,12 +22,16 @@ const ProjectTexts = ({ answers, url }: { answers: any; url?: any }) => {
             {questions[i]}
           </Typography>
           <Typography
-            fontFamily={FONT_MERRIWEATHER}
-            sx={{ textAlign: "justify", textJustify: "inter-word", textIndent: '2rem' }}
+            sx={{
+              width: { xs: "90%", md: "38%" },
+              textAlign: "justify",
+              textJustify: "inter-word",
+              textIndent: "2rem",
+            }}
           >
             {data}
           </Typography>
-          <Divider flexItem sx={{ marginY: 2, width: '100vw' }} />
+          <Divider flexItem sx={{ marginY: 2, width: "100vw" }} />
         </Box>
       ))}
       <Typography

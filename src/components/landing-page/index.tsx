@@ -1,7 +1,7 @@
 import { Divider, Grid, Box, Typography } from "@mui/material";
 import LandingText from "./LandingText";
-import LandingPoster from "./LandingPoster";
-import MuiGrid from "@mui/material/Grid";
+import team from "lottie/team.json";
+import LottiePoster from "components/common/LottiePoster";
 
 const LandingPage = () => {
   return (
@@ -33,7 +33,7 @@ const LandingPage = () => {
         </Grid>
 
         <Grid item md={4} lg={6} sx={{ marginTop: { md: 10 } }}>
-          <LandingPoster />
+          <LottiePoster width={"45vw"} file={team} />
         </Grid>
       </Grid>
       <Divider

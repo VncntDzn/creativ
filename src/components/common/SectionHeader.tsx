@@ -13,7 +13,7 @@ const HEADER_FONT_STYLE = {
   lg: 32,
   xl: 40,
 };
-const FONT_MERRIWEATHER = "Merriweather, sans-serif";
+const FONT_MERRIWEATHER: string = "Merriweather, sans-serif";
 
 const SectionHeader = ({ subtitle, title }: SectionHeaderProps) => {
   return (

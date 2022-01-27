@@ -1,7 +1,8 @@
-import { Grid, Box, Typography } from "@mui/material";
+import { Grid, Box } from "@mui/material";
+import writing from "lottie/writing.json";
 import SectionHeader from "components/common/SectionHeader";
-import ContactUsPoster from "./ContactUsPoster";
 import ContactUsForm from "./ContactUsForm";
+import LottiePoster from "components/common/LottiePoster";
 
 const ContactUs = () => {
   return (
@@ -10,7 +11,7 @@ const ContactUs = () => {
 
       <Grid container marginTop={10}>
         <Grid item lg={6} container justifyContent="center">
-          <ContactUsPoster />
+          <LottiePoster width={"25vw"} file={writing} />
         </Grid>
         <Grid item xs={12} lg={6}>
           <ContactUsForm />

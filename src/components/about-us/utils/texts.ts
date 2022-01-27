@@ -3,7 +3,7 @@ const texts = [
     id: 1,
     title: "Who is CreatiV?",
     paragraph: [
-      `CreatiV is a freelancing team that aims to provide fast websites and applications by using modern technologies to its partners at little to no cost.`,
+      `CreatiV is a team of freelancers that aims to provide fast websites and applications by using modern technologies to its partners at little to no cost.`,
     ],
   },
   {
