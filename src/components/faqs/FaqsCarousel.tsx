@@ -7,7 +7,7 @@ import faqs from "./utils";
 const FaqsCarousel = () => {
   return (
     <Box marginY={5} padding={5} sx={{ marginX: { lg: "10rem" } }}>
-      <Carousel autoPlay={true} infiniteLoop showIndicators={false} showThumbs={false} showArrows={false}>
+      <Carousel interval={5000} autoPlay={true} infiniteLoop showIndicators={false} showThumbs={false} showArrows={false}>
         {faqs.map(({ id, answer, question }) => (
           <Box
             display="flex"
