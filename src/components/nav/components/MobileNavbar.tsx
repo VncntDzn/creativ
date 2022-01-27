@@ -1,9 +1,9 @@
-import links, { LinkProps } from "../utils/links";
-import ActiveLink from "components/common/ActiveLink";
 import { Box } from "@mui/system";
 import { Divide as Hamburger } from "hamburger-react";
 import { useToggle } from "hooks";
 import { useEffect, useState } from "react";
+import links, { LinkProps } from "../utils/links";
+import ActiveLink from "components/common/ActiveLink";
 
 const contactUs = [
   {
@@ -62,7 +62,4 @@ const MobileNavbar = () => {
     </Box>
   );
 };
-
-MobileNavbar.propTypes = {};
-
 export default MobileNavbar;

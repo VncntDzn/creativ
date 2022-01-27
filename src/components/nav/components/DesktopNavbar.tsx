@@ -1,5 +1,3 @@
-import React from "react";
-import PropTypes from "prop-types";
 import { Typography, Box } from "@mui/material";
 import links from "../utils/links";
 import ActiveLink from "components/common/ActiveLink";
@@ -14,7 +12,5 @@ const DesktopNavbar = () => {
     </Box>
   );
 };
-
-DesktopNavbar.propTypes = {};
 
 export default DesktopNavbar;

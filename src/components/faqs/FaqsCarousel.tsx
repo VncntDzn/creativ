@@ -1,13 +1,19 @@
 import Typography from "@mui/material/Typography";
 import { Box, Card } from "@mui/material";
-
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
 import faqs from "./utils";
 const FaqsCarousel = () => {
   return (
     <Box marginY={5} padding={5} sx={{ marginX: { lg: "10rem" } }}>
-      <Carousel interval={5000} autoPlay={true} infiniteLoop showIndicators={false} showThumbs={false} showArrows={false}>
+      <Carousel
+        interval={5000}
+        autoPlay={true}
+        infiniteLoop
+        showIndicators={false}
+        showThumbs={false}
+        showArrows={false}
+      >
         {faqs.map(({ id, answer, question }) => (
           <Box
             display="flex"

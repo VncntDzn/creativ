@@ -5,9 +5,9 @@
  */
 import { NextRouter, useRouter } from "next/router";
 import { Typography } from "@mui/material";
+import { ReactNode } from "react";
 import Link from "next/link";
 import PropTypes from "prop-types";
-import { ReactNode } from "react";
 
 interface ActiveLinkProps {
   children?: ReactNode;
@@ -15,7 +15,7 @@ interface ActiveLinkProps {
 }
 const ActiveLink = ({ children, href = "/" }: ActiveLinkProps) => {
   const router: NextRouter = useRouter();
-  const CONDITION = router.pathname === href;
+  const CONDITION: boolean = router.pathname === href;
   const ACTIVE_STYLE = { color: "#ce7831", borderTop: "3px solid #ce7831" };
   const INACTIVE_STYLE = {
     color: "black",

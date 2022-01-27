@@ -1,20 +1,12 @@
-import React from "react";
-import PropTypes from "prop-types";
 import { Box, Typography } from "@mui/material";
+import { FONT_MERRIWEATHER, HEADER_FONT_STYLE } from "utils";
 
 interface SectionHeaderProps {
   title: string;
   subtitle: string | number;
 }
-const HEADER_FONT_STYLE = {
-  xs: 22,
-  sm: 35,
-  md: 30,
-  lg: 32,
-  xl: 40,
-};
-const FONT_MERRIWEATHER: string = "Merriweather, sans-serif";
 
+const TEXT_ALIGN = { xs: "center", lg: "left" };
 const SectionHeader = ({ subtitle, title }: SectionHeaderProps) => {
   return (
     <Box display="flex" justifyContent="center" flexDirection="column">
@@ -22,7 +14,7 @@ const SectionHeader = ({ subtitle, title }: SectionHeaderProps) => {
         fontFamily={FONT_MERRIWEATHER}
         fontWeight={600}
         sx={{
-          textAlign: { xs: "center", lg: "left" },
+          textAlign: TEXT_ALIGN,
           fontSize: HEADER_FONT_STYLE,
         }}
       >
@@ -32,10 +24,10 @@ const SectionHeader = ({ subtitle, title }: SectionHeaderProps) => {
         variant="h6"
         fontFamily={FONT_MERRIWEATHER}
         sx={{
-          textAlign: { xs: "center", lg: "left" },
+          textAlign: TEXT_ALIGN,
           fontSize: { xs: 15 },
           borderBottom: "thick solid #ce7831",
-          width: { xs: "fit-content" },
+          width: "fit-content",
           alignSelf: { xs: "center", lg: "flex-start" },
         }}
       >

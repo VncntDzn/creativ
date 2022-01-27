@@ -1,7 +1,6 @@
 import { Box, TextField, Button } from "@mui/material";
 import { sendForm } from "@emailjs/browser";
 import { useRef } from "react";
-import { toast, ToastContainer } from "react-toastify";
 
 const ContactUsForm = () => {
   const formRef: any = useRef();
@@ -24,39 +23,37 @@ const ContactUsForm = () => {
   };
 
   return (
-    <>
-      <Box sx={{ marginX: { sm: "8rem", md: "10vw", lg: 0 } }}>
-        <form ref={formRef} onSubmit={handleSendEmail}>
-          <TextField
-            variant="outlined"
-            label="Email"
-            fullWidth
-            placeholder="Email"
-            type="email"
-            required
-            /* email-js template */
-            name="from_name"
-          />
-          <TextField
-            sx={{ marginY: 1 }}
-            fullWidth
-            variant="outlined"
-            label="Body"
-            rows={10}
-            placeholder="Body"
-            type="text"
-            multiline
-            size="medium"
-            required
-            /* email-js template */
-            name="message"
-          />
-          <Button type="submit" variant="contained">
-            Send Email
-          </Button>
-        </form>
-      </Box>
-    </>
+    <Box sx={{ marginX: { sm: "8rem", md: "10vw", lg: 0 } }}>
+      <form ref={formRef} onSubmit={handleSendEmail}>
+        <TextField
+          variant="outlined"
+          label="Email"
+          fullWidth
+          placeholder="Email"
+          type="email"
+          required
+          /* email-js template */
+          name="from_name"
+        />
+        <TextField
+          sx={{ marginY: 1 }}
+          fullWidth
+          variant="outlined"
+          label="Body"
+          rows={10}
+          placeholder="Body"
+          type="text"
+          multiline
+          size="medium"
+          required
+          /* email-js template */
+          name="message"
+        />
+        <Button type="submit" variant="contained">
+          Send Email
+        </Button>
+      </form>
+    </Box>
   );
 };
 

@@ -2,15 +2,7 @@ import { Box, Divider, Grid, IconButton, Typography } from "@mui/material";
 import socialMedia, { SocMedProps } from "./utils/socialMedia";
 import { NextRouter, useRouter } from "next/router";
 import links, { LinkProps } from "./utils/links";
-
-const HEADER_FONT_STYLE = {
-  xs: 22,
-  sm: 35,
-  md: 30,
-  lg: 32,
-  xl: 30,
-};
-const FONT_MERRIWEATHER = "Merriweather, sans-serif";
+import { FONT_MERRIWEATHER, HEADER_FONT_STYLE } from "utils";
 
 const Footer = () => {
   const router: NextRouter = useRouter();
