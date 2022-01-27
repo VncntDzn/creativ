@@ -6,6 +6,7 @@ import useScrollTrigger from "@mui/material/useScrollTrigger";
 import Navbar from "./Navbar";
 import { Button, Grid } from "@mui/material";
 import Link from "next/link";
+import { NextRouter, useRouter } from "next/router";
 
 interface Props {
   /**
@@ -33,6 +34,7 @@ function ElevationScroll(props: Props) {
 }
 
 export default function ElevateAppBar(props: Props) {
+  const router: NextRouter = useRouter();
   return (
     <>
       <ElevationScroll {...props}>
@@ -50,6 +52,8 @@ export default function ElevateAppBar(props: Props) {
                   component="div"
                   color="black"
                   fontWeight={600}
+                  onClick={() => router.push("/")}
+                  sx={{ cursor: "pointer" }}
                 >
                   CreatiV
                 </Typography>
